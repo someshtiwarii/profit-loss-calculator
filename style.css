@@ -1,0 +1,41 @@
+body {
+    background-image: url('bg1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    min-height: 100vh;
+    margin: 0;
+    color: white
+}
+
+h1 {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+label {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.input1,
+.input2,
+.input3 {
+    border: none;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    width: 50%;
+    margin-bottom: 1rem;
+    padding-top: 5vh;
+}
+
+button {
+    padding: 16px 32px;
+}
