@@ -5,7 +5,7 @@ body {
     background-size: 100% 100%;
     min-height: 100vh;
     margin: 0;
-    color: white
+    color: black;
 }
 
 h1 {
@@ -18,7 +18,16 @@ h1 {
     text-align: center;
     align-items: center;
     justify-content: center;
+    /* width: 60%;
+    background-image: url("img.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-left: 5rem;
+    padding-bottom: 1rem;
+    margin: 4rem auto; */
 }
+
+
 
 label {
     font-weight: bold;
@@ -27,15 +36,36 @@ label {
 
 .input1,
 .input2,
-.input3 {
+.input3,
+.input4 {
     border: none;
     border-bottom: 1px solid white;
     background-color: transparent;
     width: 50%;
     margin-bottom: 1rem;
     padding-top: 5vh;
+    color: black;
 }
 
 button {
+    border-radius: 20px;
     padding: 16px 32px;
 }
+
+.output {
+    color: orangered;
+    font-size: larger;
+    background-color: rgb(255, 255, 255, 0.2);
+    padding: 1rem;
+}
+
+/*.container .sadtheme {
+    background-image: url("bg3.jpg");
+    background-size: 100% 100%;
+}
+
+.container .happytheme {
+    background-image: url("bg3.jpg");
+    background-size: 100% 100%;
+}
+*/
