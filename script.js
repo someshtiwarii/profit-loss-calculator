@@ -6,41 +6,41 @@ var outputDiv = document.querySelector(".output");
 var btn = document.querySelector(".submit-button");
 
 
+outputDiv.style.display = "none" ;
+
+function changeColor(color) {
+    document.body.style.background = color;
+}
+
+
 
 function clickHandler() {
-    
-    /*contentDiv.classList.remove("sadTheme");
-    contentDiv.classList.remove("happyTheme"); */
 
    let stockName, purchasePrice, quantity, currentPrice, netPrice, percentage ;
-   stockName= Number(sName.value);
+   stockName= sName.value;
    purchasePrice = Number(pPrice.value);
    quantity = Number(qty.value);
    currentPrice = Number(cPrice.value);
+   outputDiv.style.display = "block" ;
+   
 
    if(purchasePrice>currentPrice)
    {
        const loss= (purchasePrice-currentPrice)*quantity;
        const lossPer = (((purchasePrice-currentPrice)*100)/purchasePrice);
-       outputDiv.innerText = ("youre in loss" + loss + lossPer);
+       outputDiv.innerText = ("Your " + stockName + " share is in loss of Rs. " + loss + "Your loss percentage is: "+ lossPer + "%");
 
        if(lossPer>50){
-          
-        
+        changeColor('yellow');
        }
        
    }
    else{
        const profit = (currentPrice-purchasePrice)*quantity;
        const profitPer = (((currentPrice-purchasePrice)*100)/currentPrice);
-       outputDiv.innerText = ("youre in profit" + profit + profitPer);
-
-   }
-
-   
-       
-
+       outputDiv.innerText = ("Youre in profit of Rs. " + profit + "Your profit percentage is: " + profitPer + "%");
+   } 
 
 };
 
-btn.addEventListener("click", clickHandler)
+btn.addEventListener("click", clickHandler);
