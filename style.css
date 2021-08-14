@@ -50,11 +50,11 @@ button:hover{
 }
 
 .output {
-    color: orangered;
+    color: black;
     font-size: larger;
     max-width: 500px;
     margin:auto;
-    background-color: pink;
+  
     padding: 1rem;
     border: 1px solid black;
     border-radius: 10px;

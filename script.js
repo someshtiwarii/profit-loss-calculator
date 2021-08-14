@@ -23,12 +23,16 @@ function clickHandler() {
    currentPrice = Number(cPrice.value);
    outputDiv.style.display = "block" ;
    
+if( purchasePrice != 0 && quantity != 0 && currentPrice != 0){
+   
+
 
    if(purchasePrice>currentPrice)
    {
        const loss= (purchasePrice-currentPrice)*quantity;
        const lossPer = (((purchasePrice-currentPrice)*100)/purchasePrice);
        outputDiv.innerText = ("Your " + stockName + " share is in loss of Rs. " + loss + "\n" + "Your loss percentage is: "+ lossPer + "%");
+       outputDiv.style.background = "#F87171";
 
        if(lossPer>50){
         changeColor('#EF4444');
@@ -39,7 +43,14 @@ function clickHandler() {
        const profit = (currentPrice-purchasePrice)*quantity;
        const profitPer = (((currentPrice-purchasePrice)*100)/currentPrice);
        outputDiv.innerText = ("Your " + stockName + " share is in profit of Rs. " + profit + "\n" + "Your profit percentage is: " + profitPer + "%");
+       outputDiv.style.background = "#34D399";
    } 
+
+} 
+
+else{
+    outputDiv.innerText = "Please enter the required data !";
+}
 
 };
 
