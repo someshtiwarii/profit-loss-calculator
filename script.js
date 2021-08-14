@@ -28,17 +28,17 @@ function clickHandler() {
    {
        const loss= (purchasePrice-currentPrice)*quantity;
        const lossPer = (((purchasePrice-currentPrice)*100)/purchasePrice);
-       outputDiv.innerText = ("Your " + stockName + " share is in loss of Rs. " + loss + "Your loss percentage is: "+ lossPer + "%");
+       outputDiv.innerText = ("Your " + stockName + " share is in loss of Rs. " + loss + "\n" + "Your loss percentage is: "+ lossPer + "%");
 
        if(lossPer>50){
-        changeColor('yellow');
+        changeColor('#EF4444');
        }
        
    }
    else{
        const profit = (currentPrice-purchasePrice)*quantity;
        const profitPer = (((currentPrice-purchasePrice)*100)/currentPrice);
-       outputDiv.innerText = ("Youre in profit of Rs. " + profit + "Your profit percentage is: " + profitPer + "%");
+       outputDiv.innerText = ("Your " + stockName + " share is in profit of Rs. " + profit + "\n" + "Your profit percentage is: " + profitPer + "%");
    } 
 
 };
