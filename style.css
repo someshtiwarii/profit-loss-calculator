@@ -1,15 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
     margin: 0;
     color: black;
+
+
 }
 
 h1 {
     text-align: center;
     align-items: center;
     justify-content: center;
+    background-color: greenyellow;
+    padding: 10px;
+    margin-top: 0;
+  
 }
 
 .calculator {
@@ -24,6 +39,7 @@ label {
     font-size: larger;
 }
 
+
 .input1,
 .input2,
 .input3,
@@ -35,14 +51,16 @@ label {
     margin-bottom: 1rem;
     padding: 1rem 1rem;
     color: black;
+  
 }
+
 
 button {
     border-radius: 20px;
     padding: 16px 32px;
     font-size: large;
-    transition: 0.2s;
-    
+    transition:0.2s;   
+    font-weight: 500;
 }
 
 button:hover{
@@ -53,7 +71,7 @@ button:hover{
     color: black;
     font-size: larger;
     max-width: 500px;
-    margin:auto;
+    margin:0 auto;
   
     padding: 1rem;
     border: 1px solid black;
