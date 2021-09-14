@@ -32,7 +32,7 @@ if( purchasePrice != 0 && quantity != 0 && currentPrice != 0){
        const loss= (purchasePrice-currentPrice)*quantity;
        const lossPer = (((purchasePrice-currentPrice)*100)/purchasePrice);
        outputDiv.innerText = ("Your " + stockName + " share is in loss of Rs. " + loss + "\n" + "Your loss percentage is: "+ lossPer.toFixed(2) + "%");
-       outputDiv.style.background = "#F87171";
+       outputDiv.style.background = "#ff8787";
 
        if(lossPer>50){
         changeColor('#EF4444');
@@ -43,7 +43,7 @@ if( purchasePrice != 0 && quantity != 0 && currentPrice != 0){
        const profit = (currentPrice-purchasePrice)*quantity;
        const profitPer = (((currentPrice-purchasePrice)*100)/currentPrice);
        outputDiv.innerText = ("Your " + stockName + " share is in profit of Rs. " + profit + "\n" + "Your profit percentage is: " + profitPer.toFixed(2) + "%");
-       outputDiv.style.background = "#34D399";
+       outputDiv.style.background = "#69db7c";
    } 
 } 
 
