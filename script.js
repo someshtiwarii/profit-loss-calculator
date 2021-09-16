@@ -23,7 +23,7 @@ function clickHandler() {
    currentPrice = Number(cPrice.value);
    outputDiv.style.display = "block" ;
    
-if( purchasePrice != 0 && quantity != 0 && currentPrice != 0){
+if( purchasePrice > 0 && quantity > 0 && currentPrice > 0){
    
 
 
